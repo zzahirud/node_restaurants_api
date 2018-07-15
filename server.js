@@ -18,7 +18,8 @@ MongoClient.connect('mongodb://zubair:zubair86@ds147777.mlab.com:47777/node_todo
 
 //endpoint returing /console mongodb document
 app.get('/', (req, res) => {
-  res.send('Hello World 123')
+  var x = 'zuby'
+  res.send('Hello World 1234')
   db.collection('people').find().toArray((err, result) => {
     if (err) return console.log(err)
     console.log(result)
